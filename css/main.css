@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
+
+* {
+	padding: 0;
+	margin: 0;
+
+}
+
+html {
+	font-size: 16px;
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	background-color: skyblue;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Roboto Slab',Times New Roman, Georgia, serif;
+}
+
+.logo-moviedb {
+
+	width: 10%;
+	margin-left: 45%;
+	margin-top: 10%;
+}
+
+
+h1 {
+	color: darkblue;
+	margin-bottom: 1rem;
+	font-size: 2rem;
+	padding-top: 10rem;
+	padding-left: 28rem;
+}
+
+h2 {
+	color: cornflowerblue;
+	font-size: 1rem;
+	margin-left: 45%;
+	margin-top: 2rem;
+}
+
+
+header {
+	display: flex;
+	flex-direction: row;
+	margin-top: 10rem;
+	justify-content: center;
+}
+
+
+
+#search-input {
+	width: 700px;
+	height: 40px;
+	text-align: center;
+	font-size: 1.5rem;
+	transition: width 1s;
+
+
+}
+
+#search-input:hover {
+	width: 800px;
+	height: 40px;
+}
+
+#back-button {
+	width: 3rem;
+	height: 3rem;
+	cursor: pointer;
+}
+
+#settingsButton {
+	padding-top: 0.3rem;
+	width: 2rem;
+	height: 2rem;
+	cursor: pointer;
+}
+
+#search-button {
+	width: 2.5rem;
+	height: 2.5rem;
+	margin-left: -3rem;
+	margin-top: 0.2rem;
+	position: relative;
+	cursor: pointer;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.movieCard {
+	width: 50rem;
+	height: auto;
+	margin: 1rem auto;
+	background-color: cornflowerblue;
+	color: black;
+	border: 2px solid royalblue;
+}
+
+
+.movieCard:hover {
+	transform: scale(1.03);
+	transition: transform 0.5s ease;
+}
+
+
+.imageSection {
+	float: left;
+	width: 12rem;
+	height: 17rem;
+	margin-right: 1rem;
+	overflow: hidden;
+}
+
+/*select only the images that are direct descendants of .imageSection*/
+.imageSection > img {
+	height: 17rem;
+	margin-right: 1rem;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	background: rgba(0, 0, 0, 0.8);
+	cursor: pointer;
+}
+
+.modal {
+	position: fixed;
+	width: 500px;
+	height: 280px;
+	z-index: 200;
+	top: calc((100% - 280px)/2);
+	left: calc((100% - 500px)/2);
+	line-height: 1.5;
+	color: #555;
+	background-color: #eee;
+}
+
+/* use these class names to show or hide the overlay and modal window */
+.show {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+
+.off {
+	transform: translateY(-400%);
+}
+
+.on {
+	transform: translateY(0);
+}
+
+.cancelButton,
+.saveButton {
+	width: 120px;
+	position: absolute;
+	border: none;
+	background-color: skyblue;
+	color: #555;
+	cursor: pointer;
+	padding: 0.25rem 2rem;
+	font-size: 1rem;
+}
+
+.saveButton {
+	bottom: 1rem;
+	right: 4rem;
+}
+
+.cancelButton {
+	bottom: 1rem;
+	left: 4rem;
+}
+
+.modal-header {
+	padding: 2px 16px;
+	background-color: skyblue;
+	color: #555;
+	text-align: center;
+}
+
+.modal-radio {
+	text-align: center;
+	margin-top: 4rem;
+	background: #eee;
+	color: #555;
+}

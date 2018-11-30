@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Movie Recommendations</title>
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+	<main>
+		<div class="homePage">
+			<h1>Television Recommendations</h1>
+		</div>
+		<header>
+
+			<div class="backButton">
+				<img id="back-button" data-src="img/media-step-backward-lg.svg" class="iconic iconic-md" alt="Back Button" />
+
+			</div>
+
+
+			<input type="text" id="search-input" class="searchInput" placeholder="search" />
+
+			<div class="searchButtonDiv">
+				<img id="search-button" alt="Search" title="Search" data-src="img/magnifying-glass.svg" class="iconic iconic-md" />
+			</div>
+
+			<div class="settingsButton">
+				<img id="settingsButton" alt="Settings" title="Settings" data-src="img/settings-lg.svg" class="iconic iconic-md" />
+			</div>
+		</header>
+
+		<div class="page" id="search-results">
+			<section class="title"></section>
+			<section class="content flex-container"></section>
+		</div>
+
+		<div class="page" id="recommend-results">
+			<section class="title"></section>
+			<section class="content  flex-container"></section>
+		</div>
+
+			<h3 id="elapsedTime"></h3>
+	
+	</main>
+	<div class="overlay hide">&nbsp;</div>
+
+	<div class="modal off">
+		<div class="modal-header">
+			<h3>Preferences</h3>
+		</div>
+		<div class="modal-radio">
+			<span><input type="radio" name="Video" value="movie" required />&nbsp;Movie</span>
+
+			<span><input type="radio" name="Video" value="tv" required />&nbsp;TV</span>
+
+
+		</div>
+		<button class="cancelButton">Cancel</button>
+		<button class="saveButton">Save</button>
+
+	</div>
+
+
+	<div class="attribution">
+		<img class="logo-moviedb iconic" src="./img/moviedb-logo.svg" title="The Movie DB" alt="The Movie DB" />
+
+	</div>
+	<div class="footer">
+
+		<h2>&copy;Mirna Ghanayem</h2>
+
+
+	</div>
+
+	<script src="js/iconic.min.js"></script>
+	<script src="js/key.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
